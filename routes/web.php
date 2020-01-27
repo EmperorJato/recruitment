@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+Route::post('/register/store', 'Auth\RegisterController@store')->name('register.user');
+Route::get('/home', 'HomeController@index')->name('home');
