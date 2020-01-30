@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-<link href="{{asset('css/login.css')}}" rel="stylesheet" />
+<link href="{{mix('css/login.css')}}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -17,13 +17,12 @@
 		<div class="login-content">
             
 			<form method="POST" action="{{ route('login') }}">
-                @csrf
+                {{ csrf_field() }}
                 <img class="avatar" src="{{asset('img/avatar.svg')}}">
-                
                 <h2 class="title text-center">SIGN IN</h2>
                 <div class="md-form">
                     <i class="fas fa-envelope prefix"></i>
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="off" autofocus>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="off">
                     <label for="email">{{ __('Email') }}</label>
                     @error('email')
                     <span class="invalid-feedback" role="alert">

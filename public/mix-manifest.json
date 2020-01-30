@@ -1,4 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/app.js": "/js/app.js?id=79558bfc4d98af948f08",
+    "/css/app.css": "/css/app.css?id=a1def97052f73fdf1ea3",
+    "/css/paper-dashboard.css": "/css/paper-dashboard.css?id=adeb71d306c430fcf5bb",
+    "/css/login.css": "/css/login.css?id=65dbe120d3974e0219b0",
+    "/css/register.css": "/css/register.css?id=7a21cace0d6c4829849d",
+    "/js/paper-dashboard.min.js": "/js/paper-dashboard.min.js?id=b3b17829de3a01db35fc"
 }

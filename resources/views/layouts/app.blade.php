@@ -16,9 +16,8 @@
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    
     <!-- Styles -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" >
     @yield('styles')
@@ -30,9 +29,7 @@
         @yield('content')
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/popper.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js" type="text/javascript" ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @yield('session')

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::post('/register/store', 'Auth\RegisterController@store')->name('register.user');
 Route::get('/home', 'HomeController@index')->name('home');
+
+//HR
+Route::get('/hr', 'Hr\HrController@index')->name('hr.index');
+Route::get('{path}', 'Hr\HrController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );

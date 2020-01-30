@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-<link href="{{asset('css/register.css')}}" rel="stylesheet" />
+<link href="{{mix('css/register.css')}}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -27,7 +27,7 @@
             <h2 class="title text-center">SIGN UP</h2>
             <div class="md-form">
                 <i class="fas fa-user prefix"></i>
-                <input autocomplete="off" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autofocus>
+                <input autocomplete="off" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required>
                 <label for="name">{{ __('Name') }}</label>
                 @error('name')
                 <span class="invalid-feedback" role="alert">
