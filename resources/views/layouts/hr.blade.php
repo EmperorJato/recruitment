@@ -10,9 +10,11 @@
   
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
   <link href="{{ mix('css/paper-dashboard.css') }}" rel="stylesheet">
+  <link href="{{ mix('css/index.css') }}" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper " id="app">
+  <div>
     <div class="sidebar" data-color="black" data-active-color="primary">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
@@ -86,7 +88,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            {{-- {{ Auth::user()->name }} --}}
+            <a class="navbar-brand" href="#">{{ Auth::user()->name }}</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -121,9 +123,14 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdowm-item text-center" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                    </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
                 </div>
               </li>
               <li class="nav-item">
@@ -143,9 +150,11 @@
       </div>
     </div>
   </div>
+  </div>
   
   <script src="{{ mix('js/app.js') }}"></script>
   <script src="{{ asset('js/perfect-scrollbar.jquery.min.js') }}"></script>
   <script src="{{ mix('js/paper-dashboard.min.js') }}"></script>
+  <script src="{{ mix('js/index.js') }}"></script>
 </body>
 </html>

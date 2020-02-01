@@ -16,9 +16,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::post('/register/store', 'Auth\RegisterController@store')->name('register.user');
-Route::get('/home', 'HomeController@index')->name('home');
 
-//HR
-Route::get('/hr', 'Hr\HrController@index')->name('hr.index');
-Route::get('{path}', 'Hr\HrController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
+Route::get('/application-form', 'Applicant\ApplicantController@index')->name('applicant.form');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/register/store', 'Auth\RegisterController@store')->name('register.user');
+
+Route::group(['middleware' => ['auth', 'hr']], function(){
+    Route::get('{path}', 'Hr\HrController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
+});

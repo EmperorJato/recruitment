@@ -1,8 +1,10 @@
 {
-    "/js/app.js": "/js/app.js?id=79558bfc4d98af948f08",
-    "/css/app.css": "/css/app.css?id=a1def97052f73fdf1ea3",
+    "/js/app.js": "/js/app.js?id=751a4fa886cc6ec6aca6",
+    "/css/app.css": "/css/app.css?id=645007046c719d769357",
+    "/css/index.css": "/css/index.css?id=8a5efaa0fbed7349313d",
     "/css/paper-dashboard.css": "/css/paper-dashboard.css?id=adeb71d306c430fcf5bb",
     "/css/login.css": "/css/login.css?id=65dbe120d3974e0219b0",
     "/css/register.css": "/css/register.css?id=7a21cace0d6c4829849d",
-    "/js/paper-dashboard.min.js": "/js/paper-dashboard.min.js?id=b3b17829de3a01db35fc"
+    "/js/index.js": "/js/index.js?id=2861e91b33e6de29052b",
+    "/js/paper-dashboard.min.js": "/js/paper-dashboard.min.js?id=d6b072328db56662b4cf"
 }

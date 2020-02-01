@@ -1,83 +1,46 @@
 <template>
-	<mdb-container>
-		<mdb-row>
-			<mdb-col sm="4">
-				<mdb-card>
-					<mdb-view hover>
-						<a href="#!">
-							<mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap"></mdb-card-image>
-							<mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-						</a>
-					</mdb-view>
-					<mdb-card-body>
-						<a class="activator mr-4"><mdb-icon icon="share-alt" /></a>
-						<mdb-card-title>Light version</mdb-card-title>
-						<hr/>
-						<mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-						<a class="black-text d-flex justify-content-end"><h5>Read more <mdb-icon icon="angle-double-right" class="pl-1" /></h5></a>
-					</mdb-card-body>
-				</mdb-card>
-			</mdb-col>
-      <mdb-col sm="4">
-				<mdb-card>
-					<mdb-view hover>
-						<a href="#!">
-							<mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap"></mdb-card-image>
-							<mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-						</a>
-					</mdb-view>
-					<mdb-card-body>
-						<a class="activator mr-4"><mdb-icon icon="share-alt" /></a>
-						<mdb-card-title>Light version</mdb-card-title>
-						<hr/>
-						<mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-						<a class="black-text d-flex justify-content-end"><h5>Read more <mdb-icon icon="angle-double-right" class="pl-1" /></h5></a>
-					</mdb-card-body>
-				</mdb-card>
-			</mdb-col>
-      <mdb-col sm="4">
-				<mdb-card>
-					<mdb-view hover>
-						<a href="#!">
-							<mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap"></mdb-card-image>
-							<mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-						</a>
-					</mdb-view>
-					<mdb-card-body>
-						<a class="activator mr-4"><mdb-icon icon="share-alt" /></a>
-						<mdb-card-title>Light version</mdb-card-title>
-						<hr/>
-						<mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-						<a class="black-text d-flex justify-content-end"><h5>Read more <mdb-icon icon="angle-double-right" class="pl-1" /></h5></a>
-					</mdb-card-body>
-				</mdb-card>
-			</mdb-col>
-		</mdb-row>
-	</mdb-container>
-</template>
+  <div>
+    <v-app>
+      <v-row justify="center">
+        <v-col cols="12" sm="4">
+          <v-card class="mx-auto" max-width="400">
+            <v-img class="white--text align-end" height="200px" src="/img/rib_logo.jpg"></v-img>
+            <hr />
+            <v-card-text class="text--primary">
+              <h1 class="text-center">4</h1>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn color="#51cbce" text>View</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="4">
+          <v-card class="mx-auto" max-width="400">
+            <v-img class="white--text align-end" height="200px" src="/img/del_logo.jpg"></v-img>
+            <hr />
+            <v-card-text class="text--primary">
+              <h1 class="text-center">3</h1>
+            </v-card-text>
 
-<script>
-	import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardHeader, mdbCardBody, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardUp, mdbCardAvatar, mdbCardGroup, mdbBtn, mdbView, mdbMask, mdbIcon } from 'mdbvue';
-	export default {
-		name: 'CardProPage',
-		components: {
-			mdbContainer,
-			mdbRow,
-			mdbCol,
-			mdbCard,
-			mdbCardImage,
-			mdbCardHeader,
-			mdbCardBody,
-			mdbCardTitle,
-			mdbCardText,
-			mdbCardFooter,
-			mdbCardUp,
-			mdbCardAvatar,
-			mdbCardGroup,
-			mdbBtn,
-			mdbView,
-			mdbMask,
-			mdbIcon
-		}
-	}
-</script>
+            <v-card-actions>
+              <v-btn color="#51cbce" text>View</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="4">
+          <v-card class="mx-auto" max-width="400">
+            <v-img class="white--text align-end" height="200px" src="/img/ram_logo.jpg"></v-img>
+            <hr />
+            <v-card-text class="text--primary">
+              <h1 class="text-center">2</h1>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-btn color="#51cbce" text>View</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-app>
+  </div>
+</template>
