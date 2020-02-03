@@ -4,10 +4,11 @@ window.Vue = require('vue');
 
 import vuetify from './vuetify';
 import VueRouter from 'vue-router';
+
 import Recruitment from './components/applicant/Recruitment.vue';
 
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 let routes = [
     { path: '/dashboard', component: require('./components/hr/Hr_Dashboard.vue').default },

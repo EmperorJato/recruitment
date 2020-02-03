@@ -21,7 +21,6 @@
             <v-card-text class="text--primary">
               <h1 class="text-center">3</h1>
             </v-card-text>
-
             <v-card-actions>
               <v-btn color="#51cbce" text>View</v-btn>
             </v-card-actions>
@@ -34,7 +33,6 @@
             <v-card-text class="text--primary">
               <h1 class="text-center">2</h1>
             </v-card-text>
-
             <v-card-actions>
               <v-btn color="#51cbce" text>View</v-btn>
             </v-card-actions>

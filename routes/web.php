@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/application-form', 'Applicant\ApplicantController@index')->name('applicant.form');
+Route::get('application', 'Applicant\ApplicantController@index')->name('applicant.form');
+Route::post('application', 'Applicant\ApplicantController@store')->name('applicant.store');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/register/store', 'Auth\RegisterController@store')->name('register.user');
 

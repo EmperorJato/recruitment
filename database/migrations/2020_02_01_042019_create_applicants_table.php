@@ -24,6 +24,20 @@ class CreateApplicantsTable extends Migration
             $table->string('phone');
             $table->date('birthdate');
             $table->string('email')->unique();
+            $table->tinyInteger('gender');
+            $table->tinyInteger('marital_status');
+            $table->string('graduated');
+            $table->string('course');
+            $table->string('year_grad');
+            $table->text('present_address');
+            $table->text('home_address');
+            $table->string('work_exp');
+            $table->date('from');
+            $table->date('to');
+            $table->string('person');
+            $table->string('person_phone');
+            $table->text('person_address');
+            $table->string('relationship');
             $table->timestamps();
         });
     }
