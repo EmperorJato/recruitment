@@ -15,18 +15,25 @@ class ApplicantController extends Controller
     }
 
     public function validator(array $data){
+
         return Validator::make($data, [
             'firstname' => ['required', 'string'],
             'lastname' => ['required', 'string'],
             'phone' => ['required', 'string', 'unique:applicants'],
             'email' => ['required', 'string', 'email', 'unique:applicants'],
             'gender' => ['required'],
+            'present_address' => ['required'],
         ]);
+        
     }
 
     public function create(array $data){
+
         return Applicants::create([
-            'date' => Carbon::now(),
+
+            'date' => Carbon::now(), 
+            'src1' => $data['src1'],
+            'src2' => $data['src2'],
             'firstname' => $data['firstname'],
             'middlename' => $data['middlename'],
             'lastname' => $data['lastname'],
